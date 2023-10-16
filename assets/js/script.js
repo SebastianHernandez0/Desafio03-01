@@ -1,49 +1,19 @@
+let precio1=parseInt(document.querySelector(".card__precio1").textContent) 
+let suma1= document.querySelector(".button__agregar-1")
+let resta1= document.querySelector(".button__disminuir-1")
+let preciofinal=parseInt(document.querySelector(".final__span").textContent)
+let preciofinal2=document.querySelector(".final__span")
+let cantidad=parseInt(document.querySelector(".buttons__cantidad").textContent)  
+let cantidad2=document.querySelector(".buttons__cantidad")
 
-
-
-let cantidad=document.querySelector(".cantidad")
-let botonSuma=document.querySelector(".cantidad__suma")
-let botonResta=document.querySelector(".cantidad__resta")
-let body=document.querySelector("body")
-let precioSpan = document.querySelector(".precio-inicial");
-let PrecioFinal= document.querySelector(".valor-total")
-let precio = 400000;
-
-let value= cantidad.textContent;
-var valueEntero= parseInt(value)
-
-
-
-if (valueEntero >= 0) {
-    botonSuma.addEventListener("click", function(){
-        valueEntero++
-        cantidad.innerHTML=valueEntero
-        PrecioFinal.innerHTML=precio * valueEntero
-        console.log(valueEntero)
-    })
-    
+function sumar(precio,cantidad,preciofinal){
+    if (cantidad >=0) {
+        cantidad++
+        preciofinal==precio+preciofinal
+        cantidad2.innerHTML=cantidad
+        preciofinal2.innerHTML=preciofinal
+        
+    }
 }
 
-
-
-
-    botonResta.addEventListener("click", function(){
-        if(valueEntero > 1){
-        valueEntero--
-        cantidad.innerHTML=valueEntero
-        PrecioFinal.innerHTML=precio * valueEntero
-        console.log(valueEntero)
-    }
-    })
-
-
-
-
-
-precioSpan.innerHTML=precio
-
-
-
-
-
-
+suma1.addEventListener("click",sumar(precio1,cantidad,preciofinal))

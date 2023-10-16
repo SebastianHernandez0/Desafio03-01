@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 10px;
+    
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: 130px 1fr 130px ;
+    width: 100%;
+    height: 100vh;
+}
+
+.layout__nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #633e86;
+}
+
+.menu1__row1{
+    display: flex;
+    margin-left: 3rem;
+}
+.row1__ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #efeaf2;
+}
+
+.row1__li{
+    border-right: 1px solid #efeaf2;
+    height: 1.2rem;
+    padding: 0.5rem;
+    
+}
+
+.li__icon{
+    padding: 0 0.5rem;
+}
+
+.menu1__img{
+    width: 50px;
+}
+
+.menu1__inputbox{
+    width: 50rem;
+    display: flex;
+
+}
+.menu1__input{
+    padding: 0.6rem;
+    width: 50rem;
+    margin-left: 4rem;
+    border-radius: 1rem;
+}
+.input__logo{
+    font-size: 1.5rem;
+    position: relative;
+    top: 8px;
+    right: 25px;
+    color: #633e86;
+}
+::placeholder{
+    color: #633e8679;
+    font-family: Roboto;
+    padding: 0.4rem;
+    
+}
+
+.menu2__ul{
+    cursor: pointer;
+    display: flex;
+    margin-right: 20rem;
+    gap: 5rem;
+}
+.menu2__li{
+    font-size: 2rem;
+    color: #efeaf2;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.menu2__li:hover{
+    background-color: black;
+    opacity: 0.2;
+    
+}
+
+.div__li{
+    display: block;
+    cursor: pointer;
+}
+
+.div__checkbox{
+    border-radius: 99rem;
+}
+
+.main__aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    
+}
+.layout__main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 500px 1fr;
+    background-color: #fefffe;
+}
+.aside__ul1{
+    display: flex;
+    border-bottom: 1px solid #633e86;
+    
+}
+
+.aside__ul1 li{
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.aside__alimento{
+    margin-top: 0.5rem;
+    background-color: #633e8623;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.aside__ul2{
+    border-left: 1px solid #633e8634;
+    border-bottom: 1px solid #633e862f;
+    margin-left: 10px;
+}
+
+.ul2__li{
+    padding: 0.8rem;
+}
+
+.div__h2{
+    color: #633e86;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.div__input{
+    width: 100%;
+    background-color: #633e861f;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.4rem;
+}
+
+.div__ul{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.div__li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__img{
+    width: 200px;
+    height: 300px;
+}
+
+.section__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 5rem;
+
+}
+
+.cards__card{
+    margin-top: 2rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.precio__final{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-right: 50rem;
+}
+
+.button__agregar,.button__disminuir{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 3rem;
+}
+
+.button__agregar{
+    background-color: #51af00;
+}
+
+.button__disminuir{
+    background-color: #ff052a;
+}

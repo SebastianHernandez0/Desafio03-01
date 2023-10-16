@@ -3,39 +3,191 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío 1 - JavaScript</title>
-    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <title>Desafio 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/c91172c4a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body id="body">
-
-    <section>
-        <div class="card">
-            <div class="img-card"></div>
-              <h6>Laptop Gamer AMD</h6>
-              <p>Precio base: $<span class="precio-inicial"></span> </p>
-        
-              <p>Cantidad:
-                <span class="cantidad">0</span>
-                <button class="cantidad__suma"
-                >+</button>
-                <button class="cantidad__resta"
-                >-</button>
-              </p>
+<body>
+    <div class="layout">
+        <nav class="layout__nav">
+            <div class="nav__menu1">
+                <div class="menu1__row1">
+                    <div>
+                        <img class="menu1__img" src="./assets/img/icon.webp">
+                    </div>
+                    <ul class="row1__ul">
+                        <li class="row1__li"><i class="li__icon fa-solid fa-shield"></i> Compras seguras online</li>
+                        <li class="row1__li"><i class="li__icon fa-solid fa-money-bill"></i>Pago contraentrega</li>
+                        <li class="row1__li"><i class="li__icon fa-solid fa-truck-fast"></i>Entregas el mismo dia</li>
+                    </ul>
+                </div>
+                <div class="menu1__inputbox">
+                    <input class="menu1__input" placeholder="¿Qué necesita tu mascota?" type="search">
+                    <i class="input__logo fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav__menu2">
+                <div class="menu2__menu">
+                    <ul class="menu2__ul">
+                        <li class="menu2__li"><i class="fa-solid fa-cat"></i>Gatos</li>
+                        <li class="menu2__li menu2__carrito"><i class="fa-solid fa-cart-shopping"></i> </li>
+                    </ul>
+                </div>
             </div>
 
-        </div>
-    </section>
+        </nav>
+        <main class="layout__main">
+            <aside class="main__aside">
+                <ul class="aside__ul1">
+                    <li>Inicio ></li>
+                    <li>Gatos ></li>
+                    <li><strong>Seco</strong></li>
+                </ul>
+                <div class="aside__alimento">
+                    <h3>Alimento</h3>
+                </div>
+                <ul class="aside__ul2">
+                    <li class="ul2__li">Veterinario</li>
+                    <li class="ul2__li">Natural</li>
+                    <li class="ul2__li">Húmedo</li>
+                    <li class="ul2__li"><strong>Seco</strong></li>
+                </ul>
+                <div class="aside__div">
+                    <h2 class="div__h2">Seleccionar Marca</h2>
+                    <input class="div__input" type="search" placeholder="Buscar marca">
+                </div>
+                <div>
+                    <ul class="div__ul">
+                        <li class="div__li">Acana <input type="radio"></li>
+                        <li class="div__li">Agility <input type="radio"></li>
+                        <li class="div__li">Animal Planet <input type="radio"></li>
+                        <li class="div__li">Appetit <input type="radio"></li>
+                        <li class="div__li">Belcat <input type="radio"></li>
+                        <li class="div__li">Besties <input type="radio"></li>
+                        <li class="div__li">Biofresh <input type="radio"></li>
+                        <li class="div__li">Boreal <input type="radio"></li>
+                        <li class="div__li">Bravery <input type="radio"></li>
+                        <li class="div__li">Cat Chow <input type="radio"></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="main__section">
+                <div class="section__cards">
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/Nutrience.png">
+                        </figure>
+                        <h3>Nutrience - Infusion Kitten</h3>
+                        <p>$<span class="card__precio1">21500</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar button__agregar-1">+</button>
+                            <button class="button__disminuir button__disminuir-1">-</button>
+                        </div>
 
-    <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total"></span> </p>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/Hills.jpg">
+                        </figure>
+                        <h3>Hills Science Diet - Senio 7+ Chicken Recipe Cat</h3>
+                        <p>$<span class="card__precio2">25800</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/Hills2.jpg">
+                        </figure>
+                        <h3>Hills Science Diet - Adult Sensitive Stomach & Skin Cat</h3>
+                        <p>$<span class="card__precio3">26600</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/Animalplanet.jpg">
+                        </figure>
+                        <h3>Animal Planet - Alimento para gato Adulto</h3>
+                        <p>$<span class="card__precio4">30900</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/equi.jpg">
+                        </figure>
+                        <h3>Equilibrio - Alimenjto Gatos Adultos Indoor Salmón</h3>
+                        <p>$<span class="card__precio5">12300</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img"
+                                src="./assets/img/40754_195789_Oven_Baked_Tradition___Cat_Fish_1664221682_800x800.jpg">
+                        </figure>
+                        <h3>oven Baked Tradition - Alimento para Gato Adulto Pescado</h3>
+                        <p>$<span class="card__precio6">27000</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img" src="./assets/img/pro.jpg">
+                        </figure>
+                        <h3>Pro Plan - Alimento Gato Senior 7+ Optiage</h3>
+                        <p>$<span class="card__precio7">36600</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                    <div class="cards__card">
+                        <figure>
+                            <img class="card__img"
+                                src="./assets/img/69481_Monge___Adult_Chicken_Cat_1628800842_0_370x370.jpg">
+                        </figure>
+                        <h3>Monge - Adult Chicken Cat</h3>
+                        <p>$<span class="card__precio8">18000</span></p>
+                        <div class="card__buttons">
+                            <p>Cantidad: <span class="buttons__cantidad">0</span></p>
+                            <button class="button__agregar">+</button>
+                            <button class="button__disminuir">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__precio">
+                    <h3 class="precio__final">Precio Final: $ <span class="final__span">0</span></h3>
+                </div>
+            </section>
+        </main>
+        <footer class="layout__footer">
+
+        </footer>
     </div>
-
-    <script src="./assets/js/script.js">
-      
-
-    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

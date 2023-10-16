@@ -229,3 +229,7 @@ p{
 .button__disminuir{
     background-color: #ff052a;
 }
+
+.section__precio{
+    position: relative;
+}
